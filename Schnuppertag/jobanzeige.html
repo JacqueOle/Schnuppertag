@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jobanzeige</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">Schnuppertag GmbH</div>
+              <nav>
+                  <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="job.html">Job</a></li>
+                    <li><a href="jobanzeige.html">Job Anzeige</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li> <a href="login.html">Login/Register</a> </li>
+                  </ul>
+              </nav>
+      
+      </header>
+
+
+      <div class="job-posting-container">
+        <h2>Job Anzeige</h2>
+        <form action="job_posting_process.php" method="post">
+            <label for="job-title">Job Title:</label>
+            <input type="text" id="job-title" name="job-title" required>
+
+            <label for="company-name">Company Name:</label>
+            <input type="text" id="company-name" name="company-name" required>
+
+            <label for="job-description">Job Description:</label>
+            <textarea id="job-description" name="job-description" rows="4" required></textarea>
+
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location" required>
+
+            <label for="contact-email">Contact Email:</label>
+            <input type="email" id="contact-email" name="contact-email" required>
+
+            <button type="submit">Post Job</button>
+        </form>
+    </div>
+
+    <div class="back-link">
+        <p>Back to <a href="index.html">Home</a>.</p>
+    </div>
+
+   
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">Schnuppertag GmbH</div>
+              <nav>
+                  <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="job.html">Job</a></li>
+                    <li><a href="jobanzeige.html">Job Anzeige</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="login.html">Login/Register</a></li>
+                  </ul>
+              </nav>
+
+      
+      </header>
+
+
+      <div class="job-container">
+        <div class="categories-container">
+            <h2>Kategorien</h2>
+            <ul class="category-list">
+                <li><a href="#category1">Gesundheitsberufe</a></li>
+                <li><a href="#category2">Beliebteste</a></li>
+                <li><a href="#category3">In der Entwicklungsphase...</a></li>
+            </ul>
+        </div>
+        
+        <div class="left-container">
+            <div class="job-listing" onclick="showJobDescription('job1')">
+                <h3>Mitarbeiter-in / Sekretär (m/w/d) Chefarztsekretariat</h3>
+                <p>Caritas-Klinik St. Anna Berlin-Charlottenburg</p>
+                <p>Berlin</p>
+            </div>
+            <div class="job-listing" onclick="showJobDescription('job2')">
+                <h3>Mitarbeiter-in / Rezepzionist (m/w/d) Rezepzion</h3>
+                <p>Caritas-Klinik St. Anna Berlin-Charlottenburg</p>
+                <p>Berlin</p>
+            </div>
+            <div class="job-listing" onclick="showJobDescription('job3')">
+                <h3>Mitarbeiter-in / Pfläger (m/w/d) PflägerAssistent</h3>
+                <p>Caritas-Klinik St. Anna Berlin-Charlottenburg</p>
+                <p>Berlin</p>
+            </div>
+            <div class="job-listing" onclick="showJobDescription('job4')">
+                <h3>Mitarbeiter-in / Pfläger (m/w/d) PflägerChef</h3>
+                <p>Caritas-Klinik St. Anna Berlin-Charlottenburg</p>
+                <p>Berlin</p>
+            </div>
+            <div class="job-listing" onclick="showJobDescription('job5')">
+                <h3>Mitarbeiter-in / Krankenschwester (m/w/d) Krankenhaus</h3>
+                <p>Caritas-Klinik St. Anna Berlin-Charlottenburg</p>
+                <p>Berlin</p>
+            </div>
+            <div class="job-listing" onclick="showJobDescription('job6')">
+                <h3>In der Entwicklungsphase...</h3>
+                <p>...</p>
+                <p>Hamburg</p>
+            </div>
+            <div class="job-listing" onclick="showJobDescription('job7')">
+                <h3>In der Entwicklungsphase...</h3>
+                <p>...</p>
+                <p>Stuttgard</p>
+            </div>
+            <div class="job-listing" onclick="showJobDescription('job8')">
+                <h3>In der Entwicklungsphase...</h3>
+                <p>...</p>
+                <p>Nürnberg</p>
+            </div>
+            <div class="job-listing" onclick="showJobDescription('job9')">
+                <h3>In der Entwicklungsphase...</h3>
+                <p>...</p>
+                <p>Munich</p>
+            </div>
+            <div class="job-listing" onclick="showJobDescription('job10')">
+                <h3>In der Entwicklungsphase...</h3>
+                <p>...</p>
+                <p>Leipzig</p>
+            </div>
+            <div class="job-listing" onclick="showJobDescription('job11')">
+                <h3>In der Entwicklungsphase...</h3>
+                <p>...</p>
+                <p>Hanover</p>
+            </div>
+
+        </div>
+
+        <div class="middle-container" id="jobDescriptionContainer">
+            <p>Select a job to see the description.</p>
+        </div>
+    </div>
+
+
+    <script>
+        function showJobDescription(jobId) {
+            const jobDescriptions = {
+                'job1': '<h1> Mitarbeiter / Sekretär (m/w/d) Chefarztsekretariat. </h1> <br> <h3> Mitarbeiter:in Chefarztsekretariat (m/w/d) Unsere Caritas-Klinik St. Anna (ehemals Malteser-Krankenhaus) <br> Berlin-Charlottenburg steht für moderne Medizin und spürbare Zuwendung. Bei uns steht der ältere Mensch im Mittelpunkt. <br> Die uns anvertrauten Menschen können darauf vertrauen, dass sie medizinisch und pflegerisch bei uns in guten Händen sind <br> und wir sie als Mensch mit ihrer gesamten Persönlichkeit und Einzigartigkeit wahrnehmen, behandeln und umsorgen.<br>Freuen Sie sich auf eine persönliche und wertschätzende Arbeitsatmosphäre mit flachen Hierarchien,<br> die Ihnen Freiraum für die Umsetzung Ihrer Ideen und Konzepte bietet.</h3> <br><br> <p><h2> Ihre Aufgabe  </h2></p>    <h3>- Sie tragen mit Ihrer Arbeit zu einem reibungslosen Alltag im Chefarztsekretariat bei.<br>- Hierzu unterstützen den Chefarzt bei allen organisatorischen, administrativen und projektbezogenen Aufgaben sowie der Korrespondenz.<br>- Sie bearbeiten ärztliche Befunde sowie Berichte und erstellen Dokumentationen, Protokolle und Statistiken.<br>- Sie übernehmen die Patientenanmeldungen und Planung der stationären Bettenbelegung.<br>- Sie pflegen den Kontakt zu Kosten- und Kooperationspartnern und sind Ansprechperson für alle Mitarbeitenden,<br> Patient:innen und Gäste der Klinik.</h3> <br><br> <p><h2> Ihre Profil </h2></p>  <h3>  - Sie haben eine medizinische oder eine ähnliche Ausbildung abgeschlossen und besitzen mehrjährige Berufserfahrung in einer vergleichbaren Position. <br> - Sie gehen absolut sicher mit der deutschen Sprache inklusive der medizinischen Terminologie um, begegnen den Menschen verbindlich und treffen in der Kommunikation den richtigen Ton. <br> - Sie arbeiten selbstorganisiert, behalten Ihre Aufgaben im Blick und lösen Herausforderungen strukturiert. <br> - Mit den gängigen Softwareprogrammen (MS Outlook und Office) arbeiten Sie routiniert. </h3>  <br><br> <p><h2> Unser Angebot </h2></p>  <h3>  - Work-Life-Balance und Familie: Ob Zeit für Ihre Liebsten, Freunde oder Ihr Hobby, bei uns arbeiten Sie grundsätzlich von Montag bis Freitag und an Wochenenden und Feiertagen haben Sie in der Regel frei. Abweichend von den garantierten 30 Urlaubstagen können Sie in den Jahren 2024 und 2025 mit 32 und im Jahr darauf mit 31 Urlaubstagen planen! <br> - Einarbeitung, Fort- und Weiterbildung: Sie erhalten bei uns eine individuelle Einarbeitung. Zudem legen wir höchsten Wert auf Ihre persönliche und fachliche Entwicklung. In regelmäßigen Feedbackgesprächen besprechen wir gemeinsam Ihre Vorschläge zur Weiterbildung und planen die nächsten Schritte. <br> - Finanzielle Absicherung: Sie erhalten von uns ein Tarifgehalt gemäß AVR Caritas (je nach Qualifikation und Berufserfahrung), eine Altersvorsorge der KZVK sowie einen Inflationsausgleich in Höhe von 1500€ (2024). Auch eine Jahressonderzahlung gehört bei uns selbstverständlich dazu. <br> - Mobilität: Wenn Sie mit dem Rad oder den öffentlichen Verkehrsmitteln kommen möchten, bieten wir Ihnen ein Bike-Leasing bzw. ein Firmenticket an. Auch fürs Auto gibt es ausreichend, kostenfreie Parkplätze. <br> - Gesundheit und Freizeit: Wir bieten Ihnen zahlreiche Sport- und Fitnessangebote an und unterstützen Familien in der Ferienbetreuung Ihrer Kinder. Auch beim Shoppen können Sie dank unserer Corporate Benefits sparen.</h3>   ',
+                'job2': '<h1> Mitarbeiter / Rezepzionist (m/w/d) Rezepzion. </h1> <br> <h3> Mitarbeiter:in Chefarztsekretariat (m/w/d) Unsere Caritas-Klinik St. Anna (ehemals Malteser-Krankenhaus) <br> Berlin-Charlottenburg steht für moderne Medizin und spürbare Zuwendung. Bei uns steht der ältere Mensch im Mittelpunkt. <br> Die uns anvertrauten Menschen können darauf vertrauen, dass sie medizinisch und pflegerisch bei uns in guten Händen sind <br> und wir sie als Mensch mit ihrer gesamten Persönlichkeit und Einzigartigkeit wahrnehmen, behandeln und umsorgen.<br>Freuen Sie sich auf eine persönliche und wertschätzende Arbeitsatmosphäre mit flachen Hierarchien,<br> die Ihnen Freiraum für die Umsetzung Ihrer Ideen und Konzepte bietet.</h3> <br><br> <p><h2> Ihre Aufgabe  </h2></p>    <h3>- Sie tragen mit Ihrer Arbeit zu einem reibungslosen Alltag im Chefarztsekretariat bei.<br>- Hierzu unterstützen den Chefarzt bei allen organisatorischen, administrativen und projektbezogenen Aufgaben sowie der Korrespondenz.<br>- Sie bearbeiten ärztliche Befunde sowie Berichte und erstellen Dokumentationen, Protokolle und Statistiken.<br>- Sie übernehmen die Patientenanmeldungen und Planung der stationären Bettenbelegung.<br>- Sie pflegen den Kontakt zu Kosten- und Kooperationspartnern und sind Ansprechperson für alle Mitarbeitenden,<br> Patient:innen und Gäste der Klinik.</h3> <br><br> <p><h2> Ihre Profil </h2></p>  <h3>  - Sie haben eine medizinische oder eine ähnliche Ausbildung abgeschlossen und besitzen mehrjährige Berufserfahrung in einer vergleichbaren Position. <br> - Sie gehen absolut sicher mit der deutschen Sprache inklusive der medizinischen Terminologie um, begegnen den Menschen verbindlich und treffen in der Kommunikation den richtigen Ton. <br> - Sie arbeiten selbstorganisiert, behalten Ihre Aufgaben im Blick und lösen Herausforderungen strukturiert. <br> - Mit den gängigen Softwareprogrammen (MS Outlook und Office) arbeiten Sie routiniert. </h3>  <br><br> <p><h2> Unser Angebot </h2></p>  <h3>  - Work-Life-Balance und Familie: Ob Zeit für Ihre Liebsten, Freunde oder Ihr Hobby, bei uns arbeiten Sie grundsätzlich von Montag bis Freitag und an Wochenenden und Feiertagen haben Sie in der Regel frei. Abweichend von den garantierten 30 Urlaubstagen können Sie in den Jahren 2024 und 2025 mit 32 und im Jahr darauf mit 31 Urlaubstagen planen! <br> - Einarbeitung, Fort- und Weiterbildung: Sie erhalten bei uns eine individuelle Einarbeitung. Zudem legen wir höchsten Wert auf Ihre persönliche und fachliche Entwicklung. In regelmäßigen Feedbackgesprächen besprechen wir gemeinsam Ihre Vorschläge zur Weiterbildung und planen die nächsten Schritte. <br> - Finanzielle Absicherung: Sie erhalten von uns ein Tarifgehalt gemäß AVR Caritas (je nach Qualifikation und Berufserfahrung), eine Altersvorsorge der KZVK sowie einen Inflationsausgleich in Höhe von 1500€ (2024). Auch eine Jahressonderzahlung gehört bei uns selbstverständlich dazu. <br> - Mobilität: Wenn Sie mit dem Rad oder den öffentlichen Verkehrsmitteln kommen möchten, bieten wir Ihnen ein Bike-Leasing bzw. ein Firmenticket an. Auch fürs Auto gibt es ausreichend, kostenfreie Parkplätze. <br> - Gesundheit und Freizeit: Wir bieten Ihnen zahlreiche Sport- und Fitnessangebote an und unterstützen Familien in der Ferienbetreuung Ihrer Kinder. Auch beim Shoppen können Sie dank unserer Corporate Benefits sparen.</h3>   ',
+                'job3': '<h1> Mitarbeiter / Pfläger (m/w/d) PflägerAssistent. </h1> <br> <h3> Mitarbeiter:in Chefarztsekretariat (m/w/d) Unsere Caritas-Klinik St. Anna (ehemals Malteser-Krankenhaus) <br> Berlin-Charlottenburg steht für moderne Medizin und spürbare Zuwendung. Bei uns steht der ältere Mensch im Mittelpunkt. <br> Die uns anvertrauten Menschen können darauf vertrauen, dass sie medizinisch und pflegerisch bei uns in guten Händen sind <br> und wir sie als Mensch mit ihrer gesamten Persönlichkeit und Einzigartigkeit wahrnehmen, behandeln und umsorgen.<br>Freuen Sie sich auf eine persönliche und wertschätzende Arbeitsatmosphäre mit flachen Hierarchien,<br> die Ihnen Freiraum für die Umsetzung Ihrer Ideen und Konzepte bietet.</h3> <br><br> <p><h2> Ihre Aufgabe  </h2></p>    <h3>- Sie tragen mit Ihrer Arbeit zu einem reibungslosen Alltag im Chefarztsekretariat bei.<br>- Hierzu unterstützen den Chefarzt bei allen organisatorischen, administrativen und projektbezogenen Aufgaben sowie der Korrespondenz.<br>- Sie bearbeiten ärztliche Befunde sowie Berichte und erstellen Dokumentationen, Protokolle und Statistiken.<br>- Sie übernehmen die Patientenanmeldungen und Planung der stationären Bettenbelegung.<br>- Sie pflegen den Kontakt zu Kosten- und Kooperationspartnern und sind Ansprechperson für alle Mitarbeitenden,<br> Patient:innen und Gäste der Klinik.</h3> <br><br> <p><h2> Ihre Profil </h2></p>  <h3>  - Sie haben eine medizinische oder eine ähnliche Ausbildung abgeschlossen und besitzen mehrjährige Berufserfahrung in einer vergleichbaren Position. <br> - Sie gehen absolut sicher mit der deutschen Sprache inklusive der medizinischen Terminologie um, begegnen den Menschen verbindlich und treffen in der Kommunikation den richtigen Ton. <br> - Sie arbeiten selbstorganisiert, behalten Ihre Aufgaben im Blick und lösen Herausforderungen strukturiert. <br> - Mit den gängigen Softwareprogrammen (MS Outlook und Office) arbeiten Sie routiniert. </h3>  <br><br> <p><h2> Unser Angebot </h2></p>  <h3>  - Work-Life-Balance und Familie: Ob Zeit für Ihre Liebsten, Freunde oder Ihr Hobby, bei uns arbeiten Sie grundsätzlich von Montag bis Freitag und an Wochenenden und Feiertagen haben Sie in der Regel frei. Abweichend von den garantierten 30 Urlaubstagen können Sie in den Jahren 2024 und 2025 mit 32 und im Jahr darauf mit 31 Urlaubstagen planen! <br> - Einarbeitung, Fort- und Weiterbildung: Sie erhalten bei uns eine individuelle Einarbeitung. Zudem legen wir höchsten Wert auf Ihre persönliche und fachliche Entwicklung. In regelmäßigen Feedbackgesprächen besprechen wir gemeinsam Ihre Vorschläge zur Weiterbildung und planen die nächsten Schritte. <br> - Finanzielle Absicherung: Sie erhalten von uns ein Tarifgehalt gemäß AVR Caritas (je nach Qualifikation und Berufserfahrung), eine Altersvorsorge der KZVK sowie einen Inflationsausgleich in Höhe von 1500€ (2024). Auch eine Jahressonderzahlung gehört bei uns selbstverständlich dazu. <br> - Mobilität: Wenn Sie mit dem Rad oder den öffentlichen Verkehrsmitteln kommen möchten, bieten wir Ihnen ein Bike-Leasing bzw. ein Firmenticket an. Auch fürs Auto gibt es ausreichend, kostenfreie Parkplätze. <br> - Gesundheit und Freizeit: Wir bieten Ihnen zahlreiche Sport- und Fitnessangebote an und unterstützen Familien in der Ferienbetreuung Ihrer Kinder. Auch beim Shoppen können Sie dank unserer Corporate Benefits sparen.</h3>   ',
+                'job4': '<h1> Mitarbeiter / Pfläger (m/w/d) PflägerChef. </h1> <br> <h3> Mitarbeiter:in Chefarztsekretariat (m/w/d) Unsere Caritas-Klinik St. Anna (ehemals Malteser-Krankenhaus) <br> Berlin-Charlottenburg steht für moderne Medizin und spürbare Zuwendung. Bei uns steht der ältere Mensch im Mittelpunkt. <br> Die uns anvertrauten Menschen können darauf vertrauen, dass sie medizinisch und pflegerisch bei uns in guten Händen sind <br> und wir sie als Mensch mit ihrer gesamten Persönlichkeit und Einzigartigkeit wahrnehmen, behandeln und umsorgen.<br>Freuen Sie sich auf eine persönliche und wertschätzende Arbeitsatmosphäre mit flachen Hierarchien,<br> die Ihnen Freiraum für die Umsetzung Ihrer Ideen und Konzepte bietet.</h3> <br><br> <p><h2> Ihre Aufgabe  </h2></p>    <h3>- Sie tragen mit Ihrer Arbeit zu einem reibungslosen Alltag im Chefarztsekretariat bei.<br>- Hierzu unterstützen den Chefarzt bei allen organisatorischen, administrativen und projektbezogenen Aufgaben sowie der Korrespondenz.<br>- Sie bearbeiten ärztliche Befunde sowie Berichte und erstellen Dokumentationen, Protokolle und Statistiken.<br>- Sie übernehmen die Patientenanmeldungen und Planung der stationären Bettenbelegung.<br>- Sie pflegen den Kontakt zu Kosten- und Kooperationspartnern und sind Ansprechperson für alle Mitarbeitenden,<br> Patient:innen und Gäste der Klinik.</h3> <br><br> <p><h2> Ihre Profil </h2></p>  <h3>  - Sie haben eine medizinische oder eine ähnliche Ausbildung abgeschlossen und besitzen mehrjährige Berufserfahrung in einer vergleichbaren Position. <br> - Sie gehen absolut sicher mit der deutschen Sprache inklusive der medizinischen Terminologie um, begegnen den Menschen verbindlich und treffen in der Kommunikation den richtigen Ton. <br> - Sie arbeiten selbstorganisiert, behalten Ihre Aufgaben im Blick und lösen Herausforderungen strukturiert. <br> - Mit den gängigen Softwareprogrammen (MS Outlook und Office) arbeiten Sie routiniert. </h3>  <br><br> <p><h2> Unser Angebot </h2></p>  <h3>  - Work-Life-Balance und Familie: Ob Zeit für Ihre Liebsten, Freunde oder Ihr Hobby, bei uns arbeiten Sie grundsätzlich von Montag bis Freitag und an Wochenenden und Feiertagen haben Sie in der Regel frei. Abweichend von den garantierten 30 Urlaubstagen können Sie in den Jahren 2024 und 2025 mit 32 und im Jahr darauf mit 31 Urlaubstagen planen! <br> - Einarbeitung, Fort- und Weiterbildung: Sie erhalten bei uns eine individuelle Einarbeitung. Zudem legen wir höchsten Wert auf Ihre persönliche und fachliche Entwicklung. In regelmäßigen Feedbackgesprächen besprechen wir gemeinsam Ihre Vorschläge zur Weiterbildung und planen die nächsten Schritte. <br> - Finanzielle Absicherung: Sie erhalten von uns ein Tarifgehalt gemäß AVR Caritas (je nach Qualifikation und Berufserfahrung), eine Altersvorsorge der KZVK sowie einen Inflationsausgleich in Höhe von 1500€ (2024). Auch eine Jahressonderzahlung gehört bei uns selbstverständlich dazu. <br> - Mobilität: Wenn Sie mit dem Rad oder den öffentlichen Verkehrsmitteln kommen möchten, bieten wir Ihnen ein Bike-Leasing bzw. ein Firmenticket an. Auch fürs Auto gibt es ausreichend, kostenfreie Parkplätze. <br> - Gesundheit und Freizeit: Wir bieten Ihnen zahlreiche Sport- und Fitnessangebote an und unterstützen Familien in der Ferienbetreuung Ihrer Kinder. Auch beim Shoppen können Sie dank unserer Corporate Benefits sparen.</h3>   ',
+                'job5': '<h1> Mitarbeiter / Krankenschwester (m/w/d) Krankenhaus. </h1> <br> <h3> Mitarbeiter:in Chefarztsekretariat (m/w/d) Unsere Caritas-Klinik St. Anna (ehemals Malteser-Krankenhaus) <br> Berlin-Charlottenburg steht für moderne Medizin und spürbare Zuwendung. Bei uns steht der ältere Mensch im Mittelpunkt. <br> Die uns anvertrauten Menschen können darauf vertrauen, dass sie medizinisch und pflegerisch bei uns in guten Händen sind <br> und wir sie als Mensch mit ihrer gesamten Persönlichkeit und Einzigartigkeit wahrnehmen, behandeln und umsorgen.<br>Freuen Sie sich auf eine persönliche und wertschätzende Arbeitsatmosphäre mit flachen Hierarchien,<br> die Ihnen Freiraum für die Umsetzung Ihrer Ideen und Konzepte bietet.</h3> <br><br> <p><h2> Ihre Aufgabe  </h2></p>    <h3>- Sie tragen mit Ihrer Arbeit zu einem reibungslosen Alltag im Chefarztsekretariat bei.<br>- Hierzu unterstützen den Chefarzt bei allen organisatorischen, administrativen und projektbezogenen Aufgaben sowie der Korrespondenz.<br>- Sie bearbeiten ärztliche Befunde sowie Berichte und erstellen Dokumentationen, Protokolle und Statistiken.<br>- Sie übernehmen die Patientenanmeldungen und Planung der stationären Bettenbelegung.<br>- Sie pflegen den Kontakt zu Kosten- und Kooperationspartnern und sind Ansprechperson für alle Mitarbeitenden,<br> Patient:innen und Gäste der Klinik.</h3> <br><br> <p><h2> Ihre Profil </h2></p>  <h3>  - Sie haben eine medizinische oder eine ähnliche Ausbildung abgeschlossen und besitzen mehrjährige Berufserfahrung in einer vergleichbaren Position. <br> - Sie gehen absolut sicher mit der deutschen Sprache inklusive der medizinischen Terminologie um, begegnen den Menschen verbindlich und treffen in der Kommunikation den richtigen Ton. <br> - Sie arbeiten selbstorganisiert, behalten Ihre Aufgaben im Blick und lösen Herausforderungen strukturiert. <br> - Mit den gängigen Softwareprogrammen (MS Outlook und Office) arbeiten Sie routiniert. </h3>  <br><br> <p><h2> Unser Angebot </h2></p>  <h3>  - Work-Life-Balance und Familie: Ob Zeit für Ihre Liebsten, Freunde oder Ihr Hobby, bei uns arbeiten Sie grundsätzlich von Montag bis Freitag und an Wochenenden und Feiertagen haben Sie in der Regel frei. Abweichend von den garantierten 30 Urlaubstagen können Sie in den Jahren 2024 und 2025 mit 32 und im Jahr darauf mit 31 Urlaubstagen planen! <br> - Einarbeitung, Fort- und Weiterbildung: Sie erhalten bei uns eine individuelle Einarbeitung. Zudem legen wir höchsten Wert auf Ihre persönliche und fachliche Entwicklung. In regelmäßigen Feedbackgesprächen besprechen wir gemeinsam Ihre Vorschläge zur Weiterbildung und planen die nächsten Schritte. <br> - Finanzielle Absicherung: Sie erhalten von uns ein Tarifgehalt gemäß AVR Caritas (je nach Qualifikation und Berufserfahrung), eine Altersvorsorge der KZVK sowie einen Inflationsausgleich in Höhe von 1500€ (2024). Auch eine Jahressonderzahlung gehört bei uns selbstverständlich dazu. <br> - Mobilität: Wenn Sie mit dem Rad oder den öffentlichen Verkehrsmitteln kommen möchten, bieten wir Ihnen ein Bike-Leasing bzw. ein Firmenticket an. Auch fürs Auto gibt es ausreichend, kostenfreie Parkplätze. <br> - Gesundheit und Freizeit: Wir bieten Ihnen zahlreiche Sport- und Fitnessangebote an und unterstützen Familien in der Ferienbetreuung Ihrer Kinder. Auch beim Shoppen können Sie dank unserer Corporate Benefits sparen.</h3>   ',
+            };
+
+            const jobDescription = jobDescriptions[jobId] || 'No description available.';
+            document.getElementById('jobDescriptionContainer').innerHTML = `<p>${jobDescription}</p>`;
+        }
+    </script>
+
+
+<footer>
+    <div class="back-to-top" onclick="scrollToTop()">Back to Top</div>
+    <p>&copy; 2024 Olegs Cizovs. All rights reserved.</p>
+  </footer>
+  
+  <script>
+    function scrollToTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    }
+  </script>
+
+   
+</body>
+</html>
